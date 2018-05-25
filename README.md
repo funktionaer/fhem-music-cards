@@ -1,3 +1,6 @@
+# FHEM Music Cards
+Use RFID to play music on your SONOS devices via FHEM
+
 Requires:
 - python evdev. To install:
 
