@@ -1,0 +1,14 @@
+[Unit]
+Description=FHEMMusicCards
+After=network.target
+
+[Service]
+Type=simple
+User=pi
+WorkingDirectory=/home/pi/fhem-music-cards
+ExecStart=/usr/bin/python -u /home/pi/fhem-music-cards/box.py
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
